@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 func main() {
 	var numero int16 = 10000
@@ -41,4 +44,14 @@ func main() {
 
 	var texto string
 	fmt.Println(texto)
+
+	var booleano1 bool = true
+	fmt.Println(booleano1)
+
+	var booleano2 bool
+	fmt.Println(booleano2)
+
+	var erro error = errors.New("Erro interno")
+	fmt.Println(erro)
+
 }
