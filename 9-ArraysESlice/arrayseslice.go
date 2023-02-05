@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"reflect"
 )
 
 func main() {
@@ -23,7 +22,12 @@ func main() {
 	slice := []int{11, 15, 16, 10, 5, 6, 7, 8, 9} // ele não é um array, mas parece com array
 	fmt.Println(slice)
 
-	fmt.Println(reflect.TypeOf(slice))
-	fmt.Println(reflect.TypeOf(array3))
+	slice = append(slice, 35)
+	fmt.Println(slice)
 
+	slice2 := array2[1:3]
+	fmt.Println(slice2) //parece um ponteiro pegando no array2
+
+	array2[1] = "Posição Alterada"
+	fmt.Println(slice2)
 }
