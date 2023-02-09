@@ -30,4 +30,24 @@ func main() {
 
 	array2[1] = "Posição Alterada"
 	fmt.Println(slice2)
+
+	// Arrays internos
+	slice3 := make([]float32, 10, 11) // tamanho : 10 , capacidade: 15, se estourar a capacidade o Go dobra a capacidade
+	fmt.Println(slice3)
+	fmt.Println("tamanho: ", len(slice3))    // length
+	fmt.Println("capacidade: ", cap(slice3)) // capacidade
+	fmt.Println("---------")
+	fmt.Println("---------")
+	// estourar a capacidade
+	slice3 = append(slice3, 5)
+	slice3 = append(slice3, 6)
+	fmt.Println(slice3)
+	fmt.Println("tamanho: ", len(slice3))    // length
+	fmt.Println("capacidade: ", cap(slice3)) // capacidade
+	fmt.Println("---------")
+	slice4 := make([]float32, 5)
+	fmt.Println(slice4)
+	fmt.Println(len(slice4))
+	fmt.Println(cap(slice4))
+
 }
