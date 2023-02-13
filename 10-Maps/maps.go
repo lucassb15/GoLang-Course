@@ -24,4 +24,18 @@ func main() {
 	}
 
 	fmt.Println(usuario2)
+	delete(usuario2, "nome")
+	fmt.Println(usuario2)
+
+	usuario2["signo"] = map[string]string{
+		"nome": "Gêmeos",
+	}
+
+	fmt.Println(usuario2)
+
+	usuario2["dia"] = map[string]string{
+		"num": "12",
+	}
+	fmt.Println(usuario2)
+
 }
