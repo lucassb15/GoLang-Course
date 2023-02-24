@@ -11,6 +11,7 @@
             "mode": "auto",
             "program": "${workspaceFolder}/1-Pacotes/main.go",
             "console": "integratedTerminal",
+            "debugAdapter":"dlv-dap",
         }
     ]
 }
