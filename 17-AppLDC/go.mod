@@ -1,6 +1,6 @@
 module modulos
 
-go 1.18
+go 1.19
 
 require github.com/urfave/cli/v2 v2.24.4
 
